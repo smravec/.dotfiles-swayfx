@@ -39,11 +39,6 @@ output * bg ~/.config/sway/wallpaper.png fill
     # Screenshots
     bindsym $mod+s exec grim  -g "$(slurp)" ~/Desktop/Media/Pictures/Screenshots/Screenshot-$(date +'%H:%M:%S.png')
 
-    # Start mpd playlist
-    #bindsym $mod+m exec ~/.config/sway/mpd-start 
-    
-    #bindsym $mod+m exec  
-
 # Moving around:
     bindsym $mod+Left focus left
     bindsym $mod+Down focus down
@@ -115,26 +110,9 @@ seat * xcursor_theme capitaine-cursors
 output * scale 2
 
 # Waybar
-exec echo "󰗿" > /tmp/bluetooth_waybar
 exec waybar &
-
-# Startup
-assign [app_id="terminal"] workspace number 2
-assign [app_id="firefox"] workspace number 3
-assign [app_id="codium-url-handler"] workspace number 4
-assign [app_id="todo"] workspace number 5
-
-#Todo
-exec alacritty --class "todo" -e nvim ~/TODO &
-
-exec alacritty --class "terminal" &
-exec firefox &
 
 #Window rules
 for_window [app_id="Alacritty"] blur enable, blur_xray disable, blur_passes 5, blur_radius 5
-for_window [app_id="terminal"] blur enable, blur_xray disable, blur_passes 5, blur_radius 5
-for_window [app_id="todo"] blur enable, blur_xray disable, blur_passes 5, blur_radius 5, floating enable
-
-exec codium --ozone-platform-hint=auto &
 
 include @sysconfdir@/sway/config.d/*
