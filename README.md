@@ -1,12 +1,12 @@
 # Overview
 <img src=Screenshot1.png/>
 
-- **Window Manager:** [swayfx](https://github.com/hyprwm/Hyprland)
-- **Shell** [bash](https://github.com/fish-shell/fish-shell)
+- **Window Manager:** [swayfx](https://github.com/WillPower3309/swayfx)
+- **Shell** [bash](https://www.gnu.org/software/bash/)
 - **Term** [Alacritty](https://github.com/alacritty/alacritty)
 - **Browser** [Firefox](https://www.mozilla.org/en-US/firefox/) 
-- **Bar** [waybar](https://github.com/elkowar/eww)
-- **Text Editor** [neovim](https://github.com/vim/vim)
+- **Bar** [waybar](https://github.com/Alexays/Waybar)
+- **Text Editor** [neovim](https://github.com/neovim/neovim)
 - **Music server** [mpd](https://github.com/MusicPlayerDaemon/MPD)
 - **Sound Setup** [pipewire](https://gitlab.freedesktop.org/pipewire/pipewire/)
 - **Font** [JetBrainsMono](https://github.com/JetBrains/JetBrainsMono)
