@@ -1,0 +1,3 @@
+#!/usr/bin/bash
+
+mpd && mpc update && mpc play

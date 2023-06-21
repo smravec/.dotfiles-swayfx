@@ -1,0 +1,106 @@
+*{
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+}
+
+window#waybar {
+  background: transparent;
+  color: #ffffff;
+}
+
+#workspaces {
+  border: 1px solid #333331;
+  border-radius: 5px;
+
+  margin-left: 4px;
+  margin-top: 2px;
+  margin-bottom: 5px;
+  
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+#workspaces button {
+  font-size: 15px;
+  margin-left: 2px;
+  margin-right: 2px;
+
+  color: #dddddd;
+}
+
+#workspaces button:hover{
+  background: transparent;
+}
+
+#mode {
+  border: 1px solid #333331; 
+  border-radius: 4px;
+  
+  color: #dddddd;
+  
+  margin-top: 2px;
+  margin-bottom: 5px;
+  margin-left: 4px;
+  
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#clock {
+  border: 1px solid #333331;
+  border-radius: 4px;
+
+  margin-top: 2px;
+  margin-bottom: 5px;
+
+  padding-left: 12px;
+  padding-right: 12px;
+  
+  font-size: 11px;
+  
+  color: #eeeeee;
+}
+
+#custom-music {
+  font-size: 13px;
+  margin-right: 4px;
+  border: 1px solid #333331; 
+  border-radius: 4px;
+  
+  color: #dddddd;
+  
+  margin-top: 2px;
+  margin-bottom: 5px;
+  
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#network {
+  font-size: 11px;
+  border-left: 1px solid #333331;
+  border-top: 1px solid #333331;
+  border-bottom: 1px solid #333331;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  margin-top: 2px;
+  margin-bottom: 5px;
+  padding-left: 8px;
+}
+
+#battery {
+  border-right: 1px solid #333331;
+  border-top: 1px solid #333331;
+  border-bottom: 1px solid #333331;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  margin-right: 4px;
+  margin-top: 2px;
+  margin-bottom: 5px;
+  padding-left: 3px;
+  padding-right: 8px;
+  font-size: 11px;
+  color: #eeeeee;
+}

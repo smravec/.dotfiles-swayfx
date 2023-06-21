@@ -1,0 +1,61 @@
+{
+  "layer": "top",
+  "output": ["eDP-1"],
+  "position": "top",
+  
+  "modules-left": ["sway/workspaces","sway/mode"],
+  "modules-center": ["clock"],
+  "modules-right": ["custom/music","network","battery"],
+  
+  "sway/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": true,
+    "format": "{icon}",
+    "format-icons": {
+        "default": "󰝦",
+	"focused": "󰝥",
+	},
+    "persistent_workspaces": {
+      "1": [],
+      "2": [],
+      "3": [],
+      "4": [],
+      "5": []
+    },
+    "disable-click": true,
+  },
+ 
+  "sway/mode": {
+    "format": "󱨈"
+  },
+
+  "clock": {
+    "format": "{:%a %d/%m %I:%M}",
+    "interval": 60
+  },
+
+  "custom/music": {
+    "tooltip": false,
+    "format": "{}",
+    "interval": "once",
+    "exec": "cat /tmp/music_status",
+    "signal": 1
+  },
+
+  "network": {
+    "interface": "wlp170s0",
+    "format-icons": ["󰤟","󰤢","󰤥","󰤨"],
+    "format": "Disconnected 󰤭", 
+    "format-wifi": "{essid}  {icon}",
+    "format-disconnected": "Disconnected 󰤭",
+
+    "tooltip": false,
+    "max-length": 50
+  },
+
+  "battery": {
+    "format": "{icon} {capacity}",
+    "format-icons": ["󰁺","󰁻","󰁼","󰁽","󰁾","󰁿","󰂀","󰂁","󰂂","󰁹"],
+    "tooltip": false
+  }
+}
